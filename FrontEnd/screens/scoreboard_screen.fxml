@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="640.0" prefWidth="640.0" style="-fx-background-image: url(&quot;images/background_image.jpg&quot;);"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Controller.ScoreboardController">
+
+    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="783.0" text="ALL TIMES"
+           textFill="#9d3030">
+        <font>
+          <Font size="20.0"/>
+        </font>
+    </Label>
+    <TableView fx:id="scoreboard" prefHeight="133.0" prefWidth="640.0">
+        <VBox.margin>
+          <Insets/>
+        </VBox.margin>
+    </TableView>
+    <Label alignment="CENTER" prefHeight="28.0" prefWidth="1132.0" text="Weekly Scores" textAlignment="CENTER"
+           textFill="#9d3030">
+        <font>
+          <Font size="20.0"/>
+        </font>
+    </Label>
+    <TableView fx:id="weekly" layoutX="10.0" layoutY="38.0" prefHeight="133.0" prefWidth="640.0"/>
+    <HBox prefHeight="46.0" prefWidth="640.0">
+        <VBox.margin>
+            <Insets top="75.0"/>
+        </VBox.margin>
+        <Button onAction="#HandleBackButton" prefHeight="20.0" prefWidth="140.0" text="Back">
+            <effect>
+                <DropShadow color="#0038ff"/>
+            </effect>
+            <HBox.margin>
+                <Insets left="237.0"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>

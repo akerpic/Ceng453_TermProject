@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Nov 15 15:53:24 EET 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0167-176e-eb23-000010031738 
+on database directory memory:/home/kaya/Documents/workspace-sts-3.9.6.RELEASE/TermProject/testdb with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/home/kaya/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_191-b12
+user.dir=/home/kaya/Documents/workspace-sts-3.9.6.RELEASE/TermProject
+os.name=Linux
+os.arch=amd64
+os.version=4.15.0-39-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

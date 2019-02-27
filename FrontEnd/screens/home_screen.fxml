@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="640.0" prefWidth="640.0" style="-fx-background-image: url(&quot;images/background_image.jpg&quot;);"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+
+    <Label prefHeight="102.0" prefWidth="527.0" text="WELCOME TO GALAXY ATTACK" textAlignment="CENTER"
+           textFill="#6b6e46">
+        <VBox.margin>
+         <Insets left="75.0" top="200.0"/>
+        </VBox.margin>
+        <font>
+         <Font size="31.0"/>
+        </font>
+    </Label>
+    <Button alignment="CENTER" onAction="#handleLoginButton" prefHeight="40.0" prefWidth="140.0" text="Login"
+            textAlignment="CENTER" textFill="#2f2d2d">
+        <VBox.margin>
+         <Insets left="250.0"/>
+        </VBox.margin>
+        <effect>
+         <DropShadow color="#0038ff"/>
+        </effect>
+    </Button>
+    <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleCreateAccountButton" prefHeight="40.0"
+            prefWidth="140.0" text="Create Account" textAlignment="CENTER">
+        <VBox.margin>
+          <Insets left="250.0" top="30.0"/>
+        </VBox.margin>
+        <effect>
+          <DropShadow color="#0038ff"/>
+        </effect>
+    </Button>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0"/>
+</VBox>

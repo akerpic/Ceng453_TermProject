@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="640.0" prefWidth="640.0" style="-fx-background-image: url(&quot;images/background_image.jpg&quot;);"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Controller.AfterLoginController">
+
+   <Label fx:id="warning" text="The username is already used. " textAlignment="CENTER" textFill="RED" visible="false">
+      <VBox.margin>
+         <Insets left="160.0" top="200.0"/>
+      </VBox.margin>
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <HBox prefHeight="46.0" prefWidth="640.0">
+      <VBox.margin>
+         <Insets/>
+      </VBox.margin>
+      <Button onAction="#handlePlayButton" prefHeight="20.0" prefWidth="140.0" text="Play">
+         <effect>
+            <DropShadow color="#0038ff"/>
+         </effect>
+         <HBox.margin>
+            <Insets left="237.0" top="19.0"/>
+         </HBox.margin>
+      </Button>
+   </HBox>
+   <HBox prefHeight="31.0" prefWidth="640.0">
+      <VBox.margin>
+         <Insets/>
+      </VBox.margin>
+      <padding>
+         <Insets top="10.0"/>
+      </padding>
+      <Button onAction="#handleHowToPlayButton" prefHeight="20.0" prefWidth="140.0" text="How to Play">
+         <effect>
+            <DropShadow color="#0038ff"/>
+         </effect>
+         <HBox.margin>
+            <Insets left="237.0" top="10.0"/>
+         </HBox.margin>
+      </Button>
+   </HBox>
+   <HBox layoutX="10.0" layoutY="322.0" prefHeight="26.0" prefWidth="640.0">
+      <padding>
+         <Insets top="20.0"/>
+      </padding>
+      <Button onAction="#handleScoreboard" prefHeight="20.0" prefWidth="140.0" text="Scoreboard">
+         <effect>
+            <DropShadow color="#0038ff"/>
+         </effect>
+         <HBox.margin>
+            <Insets left="237.5" top="10.0"/>
+         </HBox.margin>
+      </Button>
+   </HBox>
+   <Button onAction="#handleExit" prefHeight="20.0" prefWidth="140.0" text="Exit">
+      <effect>
+         <DropShadow color="#0038ff"/>
+      </effect>
+      <VBox.margin>
+         <Insets left="237.0" top="30.0"/>
+      </VBox.margin>
+   </Button>
+</VBox>

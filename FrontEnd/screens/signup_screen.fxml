@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="640.0" prefWidth="640.0" style="-fx-background-image: url(&quot;images/background_image.jpg&quot;);"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
+
+   <Label fx:id="warning" text="The username is already used. " textAlignment="CENTER" textFill="RED" visible="false">
+      <VBox.margin>
+         <Insets left="160.0" top="200.0"/>
+      </VBox.margin>
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <HBox prefHeight="46.0" prefWidth="640.0">
+      <VBox.margin>
+         <Insets top="10.0"/>
+      </VBox.margin>
+      <TextField fx:id="username" promptText="Username">
+         <HBox.margin>
+            <Insets left="220.0" top="15.0"/>
+         </HBox.margin>
+      </TextField>
+   </HBox>
+   <HBox prefHeight="31.0" prefWidth="640.0">
+      <VBox.margin>
+         <Insets top="10.0"/>
+      </VBox.margin>
+      <padding>
+         <Insets top="10.0"/>
+      </padding>
+      <TextField fx:id="password" promptText="Password">
+         <HBox.margin>
+            <Insets left="220.0"/>
+         </HBox.margin>
+      </TextField>
+   </HBox>
+   <HBox prefHeight="26.0" prefWidth="640.0">
+      <VBox.margin>
+         <Insets/>
+      </VBox.margin>
+      <padding>
+         <Insets top="20.0"/>
+      </padding>
+      <Button onAction="#SignUpHandler" prefHeight="20.0" prefWidth="140.0" text="Create Account">
+         <HBox.margin>
+            <Insets left="237.5"/>
+         </HBox.margin>
+         <effect>
+            <DropShadow color="#0038ff"/>
+         </effect>
+      </Button>
+   </HBox>
+   <Button onAction="#backToHomeHandler" prefHeight="20.0" prefWidth="140.0" text="Back to Home">
+      <effect>
+         <DropShadow color="#0038ff"/>
+      </effect>
+      <VBox.margin>
+         <Insets left="237.0" top="30.0"/>
+      </VBox.margin>
+   </Button>
+</VBox>
